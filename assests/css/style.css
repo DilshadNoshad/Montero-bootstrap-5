@@ -7,7 +7,7 @@ body {
 }
 
 :root {
-  --primary-clr: #fc4d4a;
+  --primary-clr: hsl(1, 97%, 64%);
   --gray-clr: #a2a2a2;
   --light-clr: #fff;
 }
@@ -252,3 +252,27 @@ header {
 }
 
 /* video section end */
+
+.pricing-card-border {
+  border-width: 1px;
+  border-style: dashed;
+}
+
+.pricing-card-border[data-pri-border="pri-card-1"] {
+  border-color: var(--primary-clr);
+  background-color: hsl(1, 97%, 99%);
+}
+.pricing-card-border[data-pri-border="pri-card-2"] {
+  border-color: hsl(164, 92%, 48%);
+  background-color: hsl(164, 92%, 99%);
+}
+.pricing-card-border[data-pri-border="pri-card-3"] {
+  border-color: hsl(264, 92%, 70%);
+  background-color: hsl(264, 92%, 99%);
+}
+.price-card-btn {
+  background-color: var(--primary-clr);
+  border-radius: 50px;
+  width: 180px;
+  transition: all 0.2s;
+}
