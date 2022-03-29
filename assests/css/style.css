@@ -9,11 +9,41 @@ body {
 :root {
   --primary-clr: #fc4d4a;
   --gray-clr: #a2a2a2;
+  --light-clr: #fff;
 }
 
 .text-orange {
   color: var(--primary-clr);
 }
+
+/* section padding start */
+.pb-50 {
+  padding-bottom: 80px;
+}
+
+.pt-200 {
+  padding-top: 120px;
+}
+/* section padding end  */
+
+h1,
+h5 {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+p:not([class]) {
+  font-size: 16px;
+  color: var(--gray-clr);
+  font-family: "Poppins", sans-serif;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
 /* hero section start  */
 header {
   background: url(../img/wave-haikei.png) no-repeat center top/cover;
@@ -86,26 +116,15 @@ header {
   letter-spacing: 1px;
 }
 .contact-btn:hover {
-  color: #fff;
+  color: var(--light-clr);
   background-color: var(--primary-clr);
-}
-
-h1,
-h5 {
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-
-p:not([class]) {
-  font-size: 16px;
-  color: var(--gray-clr);
-  font-family: "Poppins", sans-serif;
 }
 
 .image-container {
   max-width: 571px;
 }
 
+/* play video icon start */
 .play-video {
   width: 60px;
   height: 60px;
@@ -115,6 +134,13 @@ p:not([class]) {
   position: relative;
   transition: all 0.36s;
   display: inline-block;
+  border: 1px solid var(--primary-clr);
+}
+.play-video:hover {
+  background-color: var(--light-clr);
+}
+.play-video:hover .play-icon {
+  border-color: transparent transparent transparent var(--primary-clr);
 }
 .play-video::before {
   content: "";
@@ -142,7 +168,7 @@ p:not([class]) {
   height: 0;
   border-width: 6px 0px 6px 10px;
   border-style: solid;
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent var(--light-clr);
   transition: border-color 0.35s ease;
   display: block;
   text-align: center;
@@ -153,25 +179,73 @@ p:not([class]) {
   font-weight: 600;
   color: var(--primary-clr);
 }
-
-.pb-50 {
-  padding-bottom: 80px;
-}
-
-.pt-200 {
-  padding-top: 120px;
-}
+/* play video icon end */
 
 /* hero section end  */
-h4 {
-  font-size: 40px;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-.icon-img {
-  font-size: 4rem;
-}
 
+/* service card start */
 .service-card:nth-child(odd) {
   margin-top: 2.5rem;
 }
+
+.card-section {
+  background: url(../img/wave-up.png) no-repeat center center / cover;
+}
+.card-border {
+  position: relative;
+}
+.card-border:hover:after,
+.card-border:hover:before {
+  transform: scale(1);
+
+  opacity: 1;
+}
+
+.card-border:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  transform: scale(0);
+  transition: all 0.35s ease;
+  left: 0;
+}
+.card-border:before {
+  content: "HOT";
+  position: absolute;
+  height: 20px;
+  width: 50px;
+  inset: 5% 5% auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-clr);
+  font-size: 12px;
+  font-weight: 600;
+  background-color: var(--primary-clr);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.card-border[data-border="card-1"]:after {
+  background-color: var(--primary-clr);
+}
+.card-border[data-border="card-2"]:after {
+  background-color: #0aecaf;
+}
+.card-border[data-border="card-3"]:after {
+  background-color: #a36af9;
+}
+.card-border[data-border="card-4"]:after {
+  background-color: #ff930d;
+}
+
+/* service card end */
+
+/* video section start */
+.video-section {
+  background: url(../img/wave-down.png) no-repeat center center / cover;
+}
+
+/* video section end */
