@@ -188,9 +188,6 @@ header {
   margin-top: 2.5rem;
 }
 
-.card-section {
-  background: url(../img/wave-up.png) no-repeat center center / cover;
-}
 .card-border {
   position: relative;
 }
@@ -244,8 +241,14 @@ header {
 /* service card end */
 
 /* video section start */
-.video-section {
-  background: url(../img/wave-down.png) no-repeat center center / cover;
+.svgBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* right: 0; */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 /* video section end */
