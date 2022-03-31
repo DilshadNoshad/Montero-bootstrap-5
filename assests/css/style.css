@@ -271,8 +271,56 @@ header {
   background-color: hsl(264, 92%, 99%);
 }
 .price-card-btn {
-  background-color: var(--primary-clr);
   border-radius: 50px;
-  width: 180px;
+  width: 200px;
+  font-size: 14px;
   transition: all 0.2s;
+}
+
+.price-card-btn[data-bg-btn="pri-btn-1"] {
+  background-color: var(--primary-clr);
+}
+.price-card-btn[data-bg-btn="pri-btn-2"] {
+  background-color: hsl(164, 92%, 48%);
+}
+.price-card-btn[data-bg-btn="pri-btn-3"] {
+  background-color: hsl(264, 92%, 70%);
+}
+.price-card-btn:hover[data-bg-btn="pri-btn-1"] {
+  background-color: hsl(1, 97%, 60%);
+}
+.price-card-btn:hover[data-bg-btn="pri-btn-2"] {
+  background-color: hsl(164, 92%, 45%);
+}
+.price-card-btn:hover[data-bg-btn="pri-btn-3"] {
+  background-color: hsl(264, 92%, 60%);
+}
+
+.decimal-price {
+  top: -32px;
+  font-size: 22px;
+  line-height: 24px;
+  left: -15px;
+}
+
+.voucher-price {
+  font-size: 60px;
+  line-height: 62px;
+}
+
+.currency {
+  font-size: 22px;
+  line-height: 24px;
+  right: -6px;
+  bottom: -15px;
+}
+
+.voucher-price[data-pri-price="pri-price-1"] {
+  color: hsl(1, 97%, 60%);
+}
+.voucher-price[data-pri-price="pri-price-2"] {
+  color: hsl(164, 92%, 45%);
+}
+.voucher-price[data-pri-price="pri-price-3"] {
+  color: hsl(264, 92%, 60%);
 }
