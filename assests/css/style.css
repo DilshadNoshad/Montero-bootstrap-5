@@ -15,6 +15,24 @@ body {
 .text-orange {
   color: var(--primary-clr);
 }
+
+/* section padding start */
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+.pb-150 {
+  padding-bottom: 150px;
+}
+
+.pt-150 {
+  padding-top: 150px;
+}
+/* section padding end  */
+
 .video-container + p {
   margin-top: 40px;
 
@@ -29,6 +47,7 @@ body {
   text-decoration: none;
 }
 
+/* back-to-top start */
 #back-top {
   position: fixed;
   inset: auto 2% 4% auto;
@@ -41,16 +60,8 @@ body {
   cursor: pointer;
   z-index: 99;
 }
+/* back-to-top end */
 
-/* section padding start */
-.pb-50 {
-  padding-bottom: 80px;
-}
-
-.pt-200 {
-  padding-top: 120px;
-}
-/* section padding end  */
 
 h1,
 h5 {
@@ -70,67 +81,61 @@ h4 {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
+.page-icon-group .icnImg[data-icon="iconImgI"] {
+  top: -26px;
+  left: 50%;
+  margin-left: -652px;
+  transform: translateX(-50%);
+  width: 102px;
+  height: 122px;
+}
 
+.page-icon-group .icnImg[data-icon="iconImgII"] {
+  left: 40%;
+  top: 5%;
+  width: 24px;
+  height: 24px;
+  transform: translateX(-50%);
+}
+.page-icon-group .icnImg[data-icon="iconImgVI"] {
+  left: 25%;
+  bottom: 20px;
+    transform: translateX(-50%);
+    width: 79px;
+    height: 95px;
+}
+
+
+
+.page-icon-group .icnImg[data-icon="iconImgIII"] {
+    top: 10%;
+    right: 10%;
+    width: 78px;
+    height: 79px;
+    transform: translateX(-50%);
+}
+
+.page-icon-group .icnImg[data-icon="iconImgV"]  {
+  width: 40px;
+  height: 40px;
+  bottom: 20%;
+  right: 0;
+  transform: translateX(-50%);
+}
+.page-icon-group .icnImg[data-icon="iconImgIV"]  {
+  width: 40px;
+  height: 40px;
+  bottom: 20%;
+  left: 0;
+  transform: translateX(-50%);
+}
 /* hero section start  */
 header {
   background: url(../img/wave-haikei.png) no-repeat center top/cover;
   min-height: 100vh;
-  position: relative;
+  min-height: -webkit-fill-available;
 }
-.hero-col-one,
-.hero-col-two {
-  position: relative;
-}
-.hero-col-one::before {
-  content: "";
-  background: url(../img/icon6.png) no-repeat;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
-}
-.hero-col-two::before {
-  content: "";
-  background: url(../img/icon2.png) no-repeat;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: 1;
-  top: 10%;
-  left: 10%;
-}
-.hero-col-two::after {
-  content: "";
-  background: url(../img/icon3.png) no-repeat;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  z-index: 1;
-  top: 10%;
-  right: 0;
-}
-.hero-section::before {
-  content: "";
-  background: url(../img/icon1.png) no-repeat;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  z-index: 1;
-  top: 20%;
-  left: -40px;
-}
-.hero-section::after {
-  content: "";
-  background: url(../img/icon5.png) no-repeat;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  z-index: 1;
-  bottom: 20%;
-  right: 0px;
-}
+
 
 .contact-btn {
   font-family: "Poppins", sans-serif;
@@ -272,13 +277,16 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  /* right: 0; */
+  right: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
 
 /* video section end */
+
+
+/* pricing card start */
 
 .pricing-card-border {
   border-width: 1px;
@@ -352,6 +360,9 @@ header {
   color: hsl(264, 92%, 60%);
 }
 
+/* pricing card end */
+
+/* carousel start */
 .bg-carousel {
   background: url(../img/img13.jpg) no-repeat center center/cover;
 }
@@ -377,10 +388,15 @@ header {
   border-radius: 50%;
   z-index: 1;
 }
+
+/* carousel end */
+/* contactus start */
 .contact-banner {
   background: url(../img/img22.png) no-repeat center center/cover;
 }
+/* contactus end */
 
+/* footer start */
 .footer-bg {
   background: rgba(252, 77, 74, 0.05);
   background-image: url(../img/ovel2.png);
@@ -406,23 +422,23 @@ color: var(--primary-clr);
 
 }
 
-.circleGradient[data-circle="circleI"] {
-  transform: rotate(28deg);
-  top: 80px;
-  right: 130px;
-  background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
-}
-
 .circleGradient {
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 10%, rgba(255, 255, 255, 0) 55%);
   z-index: -1;
 }
-
+.circleGradient[data-circle="circleI"] {
+  transform: rotate(28deg);
+  top: 80px;
+  right: 180px;
+  background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+}
 .circleGradient[data-circle="circleII"] {
   background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
   top: 90px;
-  right: -100px;
+  right: 80px;
   transform: rotate(-40deg);
 }
+
+/* footer end */
