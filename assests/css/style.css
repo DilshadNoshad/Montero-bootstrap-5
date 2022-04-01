@@ -15,6 +15,19 @@ body {
 .text-orange {
   color: var(--primary-clr);
 }
+.video-container + p {
+  margin-top: 40px;
+
+}
+.video-link {
+  color: var(--primary-clr);
+  transition:all 0.3s;
+  cursor: pointer;
+}
+.video-link:hover {
+  color: var(--primary-clr);
+  text-decoration: none;
+}
 
 #back-top {
   position: fixed;
@@ -41,7 +54,7 @@ body {
 
 h1,
 h5 {
-  font-weight: 600;
+  font-weight: 600 !important;
   font-family: "Poppins", sans-serif;
 }
 
@@ -366,4 +379,50 @@ header {
 }
 .contact-banner {
   background: url(../img/img22.png) no-repeat center center/cover;
+}
+
+.footer-bg {
+  background: rgba(252, 77, 74, 0.05);
+  background-image: url(../img/ovel2.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 220px, auto, contain;
+}
+
+.footer-text {
+  color: var(--gray-clr);
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-links {
+color: var(--gray-clr);
+text-decoration: none;
+font-size: 18px;
+transition: all 0.2s;
+font-weight: 600;
+}
+.footer-links:hover {
+color: var(--primary-clr);
+
+}
+
+.circleGradient[data-circle="circleI"] {
+  transform: rotate(28deg);
+  top: 80px;
+  right: 130px;
+  background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.circleGradient {
+  width: 320px;
+  height: 320px;
+  background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 10%, rgba(255, 255, 255, 0) 55%);
+  z-index: -1;
+}
+
+.circleGradient[data-circle="circleII"] {
+  background: linear-gradient(to bottom, rgba(252, 77, 74, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+  top: 90px;
+  right: -100px;
+  transform: rotate(-40deg);
 }
