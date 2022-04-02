@@ -496,3 +496,20 @@ box-shadow: 5px 5px 10px #999;
 transition: all 0.3s;
 }
 
+.preloader {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.preloader img {
+  width: 150px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

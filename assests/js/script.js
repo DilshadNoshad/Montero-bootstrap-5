@@ -1,11 +1,11 @@
 $(document).ready(function () {
-  //   $(".nav-item").click(function () {
-  //     $(this)
-  //       .addClass("active-item-links")
-  //       .siblings()
-  //       .removeClass("active-item-links");
-  //   });
+  // preloader
 
+  $(window).on("load", function () {
+    $("#loader").fadeOut("1000");
+  });
+
+  // change navbar
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     if (position >= 90) {
@@ -14,6 +14,7 @@ $(document).ready(function () {
       $(".navbar").removeClass("fixed-nav");
     }
   });
+  // back to top
 
   $(window).scroll(function () {
     let position = $(this).scrollTop();
