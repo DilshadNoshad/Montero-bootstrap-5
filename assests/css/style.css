@@ -781,3 +781,28 @@ header {
     border-width: 5px 0px 5px 10px;
   }
 }
+
+/* modal  start*/
+
+.input,
+.input:focus {
+background-color: hsla(
+    var(--primary-clr-h),
+    var(--primary-clr-l),
+    var(--primary-clr-l),
+    0.04
+  );
+  border-color: hsl(var(--primary-clr-h), var(--primary-clr-s), var(--primary-clr-l));
+  box-shadow: none;
+}
+
+.input::placeholder {
+  color: var(--dark-clr);
+}
+
+textarea {
+  resize: none;
+}
+
+
+/* modal  end*/

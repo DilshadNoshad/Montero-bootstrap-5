@@ -80,7 +80,8 @@
               </li>
               <li class="nav-item m-2">
                 <a
-                  href="#contact-us"
+                  data-bs-target="#popup"
+                  data-bs-toggle="modal"
                   data-bg-btn="pri-btn-1"
                   class="nav-link btn py-3 px-4 text-light text-uppercase fw-bold price-card-btn"
                   >Contact Us &nbsp;<i class="fas fa-arrow-right"></i
@@ -773,6 +774,59 @@
         <img src="assests/img/puff.svg" alt="loader" />
       </div>
       <!-- preloader  end -->
+      <!-- modal start -->
+      <div class="modal fade" id="popup">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header flex-column">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+              <h1 class="h2 mb-4 fw-bold">Get Your Free Quote</h1>
+              <p>Supporting call-to-action goes here</p>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control input text-capitalize"
+                    placeholder="name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control input text-capitalize"
+                    placeholder="email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control input text-capitalize"
+                    placeholder="message"
+                    rows="10"
+                  ></textarea>
+                </div>
+
+                <div class="mb-3 text-center">
+                  <button
+                    type="button"
+                    data-bg-btn="pri-btn-1"
+                    class="btn p-3 text-light text-uppercase fw-bold price-card-btn"
+                    data-bs-dismiss="modal"
+                  >
+                    send your message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal end -->
     </footer>
 
     <!-- footer end -->
