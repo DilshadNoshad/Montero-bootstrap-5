@@ -55,6 +55,31 @@ body {
 }
 /* section padding end  */
 
+/* nav start */
+
+.menu-item {
+  color: var(--dark-clr-clr) !important;
+  transition: all 0.3s;
+}
+.menu-item:hover,
+.active-item-links {
+  color: hsl(var(--primary-clr-h), var(--primary-clr-s), var(--primary-clr-l))!important;
+}
+
+
+.fixed-nav {
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+background-color: var(--light-clr);
+z-index: 999;
+padding: 15px 20px !important;
+box-shadow: 5px 5px 10px #999;
+transition: all 0.3s;
+}
+/* nav end */
+
 .video-container + p {
   margin-top: 40px;
 
@@ -474,28 +499,8 @@ color: hsl(var(--primary-clr-h), var(--primary-clr-s), var(--primary-clr-l));
 }
 
 /* footer end */
-.menu-item {
-  color: var(--dark-clr-clr) !important;
-  transition: all 0.3s;
-}
-.menu-item:hover,
-.active-item-links {
-  color: hsl(var(--primary-clr-h), var(--primary-clr-s), var(--primary-clr-l))!important;
-}
 
-
-.fixed-nav {
-position: fixed;
-top: 0;
-right: 0;
-left: 0;
-background-color: var(--light-clr);
-z-index: 999;
-padding: 15px 20px !important;
-box-shadow: 5px 5px 10px #999;
-transition: all 0.3s;
-}
-
+/* preloader start */
 .preloader {
   top: 0;
   left: 0;
@@ -513,3 +518,66 @@ transition: all 0.3s;
   position: absolute;
   transform: translate(-50%, -50%);
 }
+
+/* preloader end */
+
+/* video play-icon start */
+
+.video-btn-holder {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-play-btn {
+  width: 80px;
+  height: 80px;
+  background-color: var(--light-clr);
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+}
+
+.video-play-btn::after,
+.video-play-btn::before {
+  position: absolute;
+    content: "";
+    border: 1px solid #fff;
+    border-radius: 100%;
+    animation: Orbit 4s infinite;
+}
+@keyframes Orbit {
+
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+  
+}
+
+
+
+
+.video-play-btn::before {
+  width: 100px;
+  height: 100px;
+}
+.video-play-btn::after {
+  width: 120px;
+  height: 120px;
+}
+
+.video-btn-icon {
+  width: 0;
+  height: 0;
+  border-width: 10px 0px 10px 16px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--dark-clr);
+  transition: border-color 0.35s ease;
+  display: block;
+  text-align: center;
+}
+
+
+/* video play-icon end */

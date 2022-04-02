@@ -6,6 +6,7 @@ $(document).ready(function () {
   });
 
   // change navbar
+
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     if (position >= 90) {
@@ -14,6 +15,7 @@ $(document).ready(function () {
       $(".navbar").removeClass("fixed-nav");
     }
   });
+
   // back to top
 
   $(window).scroll(function () {
@@ -50,7 +52,7 @@ $(document).ready(function () {
       }
     });
   });
-
+  // owlCarousel
   $(".owl-carousel").owlCarousel({
     items: 6,
     loop: true,
@@ -72,7 +74,7 @@ $(document).ready(function () {
       },
     },
   });
-
+  // counter up
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
